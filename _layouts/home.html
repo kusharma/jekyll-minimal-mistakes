@@ -1,20 +1,18 @@
 ---
-layout: archive
+layout: default
 ---
 
-{{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=posts type=entries_layout %}
+<div class="projects-section">
+  <h2>My Projects</h2>
+  <div class="project-list">
+    {% for project in site.projects %}
+      <div class="project-item">
+        <a href="{{ project.link }}" target="_blank">
+          <img src="{{ project.image }}" alt="{{ project.name }}" style="width:200px; height:auto;">
+        </a>
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
 </div>
-
-{% include paginator.html %}
