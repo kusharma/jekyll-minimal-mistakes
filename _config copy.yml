@@ -323,30 +323,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-# Projects from GitHub repositories
-projects:
-  - name: "Expedia-RecTour-Ranking"
-    description: "A Python project for tour ranking"
-    image: "/assets/images/expedia_project.png"  # Make sure to place your image in the correct folder
-    link: "https://github.com/kusharma/Expedia-RecTour-Ranking"
-  - name: "RAG-Sustainability"
-    description: "A project using Jupyter Notebook for RAG sustainability"
-    image: "/assets/images/rag_sustainability.png"
-    link: "https://github.com/kusharma/RAG-Sustainability"
-  - name: "brain-tumour-classification"
-    description: "Jupyter Notebook for brain tumor classification"
-    image: "/assets/images/brain_tumor_classification.png"
-    link: "https://github.com/kusharma/brain-tumour-classification"
-  - name: "streamlit-app"
-    description: "A Python-based Streamlit app"
-    image: "/assets/images/streamlit_app.png"
-    link: "https://github.com/kusharma/streamlit-app"
-  - name: "symphony-of-nebula"
-    description: "A Jupyter Notebook project for nebula symphony"
-    image: "/assets/images/symphony_nebula.png"
-    link: "https://github.com/kusharma/symphony-of-nebula"
-  - name: "EPFL Extension School Project"
-    description: "HTML project for EPFL extension school"
-    image: "/assets/images/epfl_project.png"
-    link: "https://github.com/kusharma/epfl-extension-school-project"
